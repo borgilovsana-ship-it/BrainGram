@@ -94,3 +94,48 @@ body.chats-mode #chat-list .chat-row:active{background:#edf5fa!important}
 @media(min-width:621px){
   body .app-shell{box-shadow:none!important}
 }
+
+
+/* BrainGram — black theme */
+:root{color-scheme:dark;--rect-bg:#08090c;--rect-panel:#111318;--rect-line:#292d36;--rect-blue:#299fe6;--rect-text:#f2f4f7;--rect-muted:#9299a5}
+html,body,body .app-shell,body.chats-mode,body.contacts-mode,body.settings-mode,body.profile-mode,
+body.chats-mode .app-shell,body.contacts-mode .app-shell,body.settings-mode .app-shell,body.profile-mode .app-shell,
+.chats-page,.contacts-page,.profile-page,.settings-page,.profile-hero,.settings-profile{
+ background:var(--rect-bg)!important;color:var(--rect-text)!important
+}
+.topbar,.conversation-header{background:#101216!important;color:var(--rect-text)!important;border-bottom:1px solid var(--rect-line)!important}
+.topbar h1,.topbar p,.brand-copy,.brand-copy h1,.chats-heading h2,.contacts-heading h2,.profile-hero h2,.settings-profile h2,.profile-mini-logo,.settings-mini-logo{color:var(--rect-text)!important}
+.chats-brand-icon,.brand-mark{background:var(--rect-blue)!important;color:#fff!important}
+.chats-search,.contacts-search,.search-box,#message-input,.composer input,.text-field,.auth-card,.auth-tabs,.auth-tab,
+.settings-list,.settings-row,.contacts-shortcuts,.contacts-list-card,.profile-details,.profile-tabs,.profile-action,.profile-music,
+.chat-tabs,.chat-tab,.chat-row,.bottom-nav,.profile-edit-panel{
+ background:var(--rect-panel)!important;color:var(--rect-text)!important;border-color:var(--rect-line)!important
+}
+.chats-search input,.contacts-search input,.search-box input,#message-input,.composer input,.text-field,.auth-card input{
+ color:var(--rect-text)!important;background:#0b0d11!important
+}
+.chats-search input::placeholder,.contacts-search input::placeholder,.search-box input::placeholder,.text-field::placeholder,#message-input::placeholder,.composer input::placeholder{color:var(--rect-muted)!important}
+.chat-tabs,.profile-tabs{border:1px solid var(--rect-line)!important}
+.chat-tab,.profile-tab{color:var(--rect-muted)!important}
+.chat-tab.active,.profile-tab.active,.nav-button.active{background:#172a38!important;color:#61baff!important}
+body.chats-mode #chat-list .chat-row{background:var(--rect-panel)!important;border:1px solid var(--rect-line)!important;color:var(--rect-text)!important}
+.chat-name,.chat-title-line,.profile-detail strong,.settings-row strong,.contact-shortcut strong,.profile-action,.settings-row,.contact-shortcut{color:var(--rect-text)!important}
+.chat-preview,.chat-time,.muted,.profile-detail span,.settings-row small,.profile-online,.contacts-sort-label,.contacts-empty,.contacts-empty p,.settings-account-footer,.section-heading{color:var(--rect-muted)!important}
+.contacts-shortcuts,.contacts-list-card,.settings-list,.profile-details,.profile-tabs,.profile-edit-panel{background:var(--rect-panel)!important;border:1px solid var(--rect-line)!important}
+.contact-shortcut,.settings-row,.profile-action{background:var(--rect-panel)!important;border-color:var(--rect-line)!important}
+.settings-icon,.shortcut-icon{border-color:#3b414d!important}
+.bottom-nav{background:#0e1014!important;border-top:1px solid var(--rect-line)!important}
+.nav-button{color:var(--rect-muted)!important}
+.chats-fab,.contacts-add-button,.profile-add-button,.send-button,.primary-button,.auth-submit{background:var(--rect-blue)!important;color:#fff!important;border:1px solid #299fe6!important}
+.conversation{background:#090b0f!important}
+.messages{background-color:#090b0f!important;background-image:radial-gradient(#202630 .7px,transparent .7px)!important}
+.message-bubble{background:#171a20!important;color:var(--rect-text)!important;border:1px solid #292e38!important}
+.message-bubble.mine{background:#12314a!important;color:#f2f7fb!important;border-color:#1e4b6c!important}
+.message-meta{color:#a8bdcc!important}
+.composer,#message-form{background:#101216!important;border-top:1px solid var(--rect-line)!important}
+.demo-notice{background:#142331!important;color:#b9d9f0!important}
+.empty-card,.settings-card{background:var(--rect-panel)!important;color:var(--rect-text)!important;border:1px solid var(--rect-line)!important}
+.status-pill{background:#14251e!important;color:#a8e3c2!important}
+.profile-photo,.settings-avatar,.avatar,.profile-avatar{border:1px solid #343a46!important}
+.auth-message{color:#a8e3c2!important}.auth-footnote{color:var(--rect-muted)!important}
+.settings-logout{background:#32191c!important;color:#ff9a9a!important}
