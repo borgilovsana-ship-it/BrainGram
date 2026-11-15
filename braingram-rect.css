@@ -1,0 +1,96 @@
+/* BrainGram — first rectangular style experiment */
+:root{
+  --rect-bg:#f4f6f8;
+  --rect-panel:#ffffff;
+  --rect-line:#dce2e7;
+  --rect-blue:#229ed9;
+}
+*,
+*::before,
+*::after{
+  border-radius:0!important;
+}
+html,body,.app-shell,
+.chats-page,.contacts-page,.profile-page,.settings-page{
+  background:var(--rect-bg)!important;
+}
+body .app-shell{max-width:650px!important}
+.topbar{
+  background:var(--rect-blue)!important;
+  box-shadow:none!important;
+}
+.brand-mark,.chats-brand-icon,.settings-avatar,.profile-photo,
+.avatar,.profile-avatar,.settings-icon,.shortcut-icon{
+  border-radius:0!important;
+}
+.chats-search,.contacts-search,.search-box,
+#message-input,.composer input,.text-field,
+.auth-card,.auth-tabs,.auth-tab,.primary-button,
+button,.settings-list,.settings-row,.contacts-shortcuts,
+.contacts-list-card,.profile-details,.profile-tabs,
+.profile-action,.profile-music,.chat-tabs,.chat-tab,
+.chat-row,.message-bubble,.conversation-header,
+.composer,.bottom-nav,.nav-button,
+.premium-plan,.premium-feature,.profile-edit-panel{
+  border-radius:0!important;
+  box-shadow:none!important;
+}
+.chats-search,.contacts-search,.search-box,
+#message-input,.composer input,.text-field{
+  border:1px solid var(--rect-line)!important;
+  background:#fff!important;
+}
+.chat-tabs,.profile-tabs{
+  border:1px solid var(--rect-line)!important;
+  background:#fff!important;
+}
+.chat-tab.active,.profile-tab.active{
+  background:#e5f4fb!important;
+  box-shadow:inset 0 -2px var(--rect-blue)!important;
+}
+body.chats-mode #chat-list .chat-row{
+  background:#fff!important;
+  border:1px solid var(--rect-line)!important;
+  border-bottom:1px solid var(--rect-line)!important;
+  margin:0 0 5px!important;
+}
+body.chats-mode #chat-list .chat-row:active{background:#edf5fa!important}
+.contacts-shortcuts,.contacts-list-card,.settings-list,
+.profile-details,.profile-tabs,.profile-edit-panel{
+  border:1px solid var(--rect-line)!important;
+  background:#fff!important;
+}
+.contact-shortcut,.settings-row,.profile-action{
+  border-bottom:1px solid var(--rect-line)!important;
+  background:#fff!important;
+}
+.settings-icon,.shortcut-icon{
+  border:1px solid #d7e0e7!important;
+}
+.bottom-nav{
+  width:100%!important;
+  max-width:650px!important;
+  height:62px!important;
+  bottom:0!important;
+  padding:4px 6px calc(4px + env(safe-area-inset-bottom))!important;
+  border:0!important;
+  border-top:1px solid var(--rect-line)!important;
+  background:#fff!important;
+}
+.nav-button{border:0!important}
+.nav-button.active{background:#e5f4fb!important;color:var(--rect-blue)!important}
+.chats-fab,.contacts-add-button,.profile-add-button,.send-button{
+  border:1px solid var(--rect-blue)!important;
+  background:var(--rect-blue)!important;
+  box-shadow:none!important;
+}
+.message-bubble{border:1px solid var(--rect-line)!important}
+.message-bubble.mine{border-color:#c8e8c0!important}
+.profile-hero,.settings-profile{background:transparent!important}
+.profile-photo,.settings-avatar{
+  border:1px solid var(--rect-line)!important;
+}
+.conversation-header{border-bottom:1px solid var(--rect-line)!important}
+@media(min-width:621px){
+  body .app-shell{box-shadow:none!important}
+}
